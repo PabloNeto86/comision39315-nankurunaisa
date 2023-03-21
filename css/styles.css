@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**HEADER**/
+header div{
+    background-color: #D0F4DE;
+}
+div img{
+    width: 200px;
+    padding: 1%;
+}
+.frase{
+    font-family: 'Shantell Sans', cursive;
+    color: orangered;
+    text-align: end;
+    padding-right: 5%;
+}
+.nav-bar{
+    background-color: #FF99C8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+
+}
+.nav-bar nav ul{
+    list-style: none;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+}
+/**MAIN INDEX**/
+main{
+    align-content: center;
+    background-color: #FCF6BD;
+}
+video{
+    width: 80%;
+    margin: 2% 10% 5% 10%;
+    /*margin-left: 10%;
+    margin-right: 10%;*/
+}
+.parrafoMain{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 80%;
+    margin: 0% 10% 5% 10%;
+}
+button{
+    background-color: #D0F4DE;
+    border-radius: 50px;
+    border-color: #FF99C8;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 24px;
+    width: 30%;
+    padding: 10px;
+    margin: 2% 35% 2% 35%;
+    align-content: center;
+}
+.whatsapp a img{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+/**MAIN GALERIA**/
+.fotoGaleria{
+    width: 20%;
+    margin: 2%;
+}
+/**MAIN CONTACTO**/
+.redesContacto img{
+    height: 40px;
+    margin: 2%;
+}
+/**FOOTER**/
+footer{
+    background-color: #E4C1F9;
+}
+.redes img{
+    height: 20px;
+}
+.redes a{
+    text-decoration: none;
+    list-style: none;
+}
+footer h2{
+    font-family: 'Shantell Sans', cursive;
+}
