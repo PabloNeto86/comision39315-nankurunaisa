@@ -4,40 +4,45 @@
     box-sizing: border-box;
 }
 /**HEADER**/
+header{
+    position: sticky;
+    top: 0%;
+    z-index: inherit;
+}
 header div{
     background-color: #D0F4DE;
 }
-div img{
-    width: 200px;
+.logo{
+    width: 10rem;
     padding: 1%;
 }
-.frase{
-    font-family: 'Shantell Sans', cursive;
-    color: orangered;
-    text-align: end;
-    padding-right: 5%;
-}
-.nav-bar{
-    background-color: #FF99C8;
+
+.navbar{
+    display: inline;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 800;
+    font-size: 16px;
+    font-weight: 600;
 
 }
-.nav-bar nav ul{
+.nav{
+    align-content: end;
+}
+.navbar nav ul{
     list-style: none;
 }
-.nav-bar a{
+.navbar a{
     text-decoration: none;
-    color: white;
+    color: #FF99C8;
 }
 /**MAIN INDEX**/
 main{
     align-content: center;
     background-color: #FCF6BD;
 }
-video{
+.carousel-inner{
     width: 80%;
-    margin: 2% 10% 5% 10%;
+    height: 400px;
+    margin: 0% 10% 0% 10%;
     /*margin-left: 10%;
     margin-right: 10%;*/
 }
@@ -47,7 +52,7 @@ video{
     width: 80%;
     margin: 0% 10% 5% 10%;
 }
-button{
+.btn-3d{
     background-color: #D0F4DE;
     border-radius: 50px;
     border-color: #FF99C8;
@@ -58,6 +63,19 @@ button{
     margin: 2% 35% 2% 35%;
     align-content: center;
 }
+.btn-3d:hover, .btn-3d:focus {
+    background-color: #FF99C8;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#faaacf),to(#fa3692));
+    background-image: linear-gradient(#faaacf 10%,#fa3692 100%);
+}
+
+.btn-3d:active {
+    background-color: #D0F4DE;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.2) inset;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#9cc9ad),to(#75fda9));
+    background-image: linear-gradient(#9cc9ad 10%,#75fda9 100%);
+}
+
 .whatsapp a img{
     height: 100px;
     width: 100px;
@@ -65,11 +83,24 @@ button{
     padding: 10px;
 }
 /**MAIN GALERIA**/
-.fotoGaleria{
-    width: 20%;
-    margin: 2%;
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 2%;
+}
+
+.galeria img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #faaacf;
+    border-radius: 10px;
+    object-fit: scale-down;
 }
 /**MAIN CONTACTO**/
+.formulario{
+    padding: 5%;
+}
 .redesContacto img{
     height: 40px;
     margin: 2%;

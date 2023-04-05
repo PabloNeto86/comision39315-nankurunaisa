@@ -4,37 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>Nankurunaisa</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png"/>
+    <title>Nankurunaisa - Home</title>
 </head>
 <body>
     <header>
-        <div> <img src="./assets/img/nankurunaisaLogo.png" alt="logo"></div>
-        <div class="frase">
-        <h2>Veni a festejar con nosotros,</h2>
-        <h3>Todo va a estar bien.</h3>
-        </div>
-        <div class="nav-bar">
-            <nav>
-                <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="./pages/promos.html">PROMOS</a></li>
-                    <li><a href="./pages/servicios.html">SERVICIOS ADICIONALES</a></li>
-                    <li><a href="./pages/galeria.html">GALERIA</a></li>
-                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./assets/img/nankurunaisaLogo.png" alt="Logo" width="30" height="" class="d-inline-block align-text-top logo">
+                    </a>
+                <div>
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/promos.html">PROMOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/servicios.html">SERVICIOS ADICIONALES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/galeria.html">GALERIA</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                        </nav>
+                </div>
+            </div>
+        </nav>
     </header>
     <main class="main">
-        <div class="video">
-            <video src="./assets/video/video1.mp4" controls ></video>
-        </div>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/foto1.jpeg" class="d-block w-100 imgindex" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/foto2.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/foto4.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         <div>
-            <button>ARMA TU FIESTA!</button>
+            <button class="btn-3d">ARMA TU FIESTA!</button>
         </div>
         <div>
             <p class="parrafoMain">¡Celebra el cumpleaños de tu pequeño como nunca antes en nuestro salón de fiestas infantiles!
@@ -73,5 +129,6 @@
         </ul>
         <h2>Nankurunaisa 2023 - Todos los derechos reservados</h2>
     </footer>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
