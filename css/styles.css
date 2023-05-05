@@ -7,7 +7,7 @@
 header {
   position: sticky;
   top: 0%;
-  z-index: inherit; }
+  z-index: 1; }
   header div {
     background-color: #D0F4DE; }
     header div a img {
@@ -28,7 +28,10 @@ header {
 /**MAIN INDEX**/
 main {
   align-content: center;
-  background-color: #FCF6BD; }
+  background-color: #FCF6BD;
+  background-image: url(../assets/img/confetis.svg);
+  background-repeat: no-repeat;
+  background-size: 100vw; }
   main .carousel-inner {
     width: 80%;
     height: 400px;
@@ -65,11 +68,69 @@ div p {
   width: 80%;
   margin: 0% 10% 5% 10%; }
 
-.whatsapp a img {
-  height: 100px;
-  width: 100px;
-  margin: 10px;
-  padding: 10px; }
+.parrafoMain {
+  background-color: #D0F4DE;
+  font-size: 18px;
+  font-weight: 400;
+  animation: cambioColor 2s ease infinite; }
+
+@keyframes cambioColor {
+  0% {
+    color: black; }
+  50% {
+    color: #fa3692; }
+  100% {
+    color: black; } }
+
+/**MAIN PROMOS**/
+.promos {
+  height: 940px; }
+
+.col-md-4 {
+  margin-top: 5%; }
+
+.fun-card {
+  background-color: #fa3692;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #888888;
+  text-align: center;
+  margin: 10%; }
+
+.fun-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px #888888;
+  transition-duration: 0.5s; }
+
+.fun-card .card-title {
+  color: #fff;
+  font-size: 24px;
+  margin-top: 10px;
+  text-shadow: 2px 2px #888888; }
+
+.fun-card .card-text {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px #888888; }
+
+.precio {
+  color: #D0F4DE;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px #888888; }
+
+.fun-card img {
+  border-radius: 50%;
+  margin-top: -50px;
+  box-shadow: 0px 0px 10px #888888;
+  transition-duration: 0.5s;
+  width: 80%; }
+
+.fun-card img:hover {
+  transform: rotate(360deg);
+  transition-duration: 0.5s; }
 
 /**MAIN GALERIA**/
 .galeria {
@@ -85,11 +146,19 @@ div p {
   border-radius: 10px;
   object-fit: scale-down; }
 
+.fotoGaleria:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px #888888;
+  transition-duration: 0.5s; }
+
 /**MAIN SERVICIOS**/
 .titulo {
+  color: white;
   text-align: center;
   font-family: 'Shantell Sans', cursive;
-  font-weight: 800; }
+  font-size: 26px;
+  font-weight: 800;
+  background-color: #fa3692; }
 
 .servicio {
   background-color: #D0F4DE;
@@ -133,41 +202,97 @@ div p {
 
 /**MAIN CONTACTO**/
 .formulario {
-  padding: 5%; }
-
-.redesContacto img {
-  height: 40px;
-  margin: 2%; }
+  max-width: 70%;
+  margin: 5% 15% 5% 10%;
+  display: flex; }
+  .formulario .mapa {
+    width: 600px; }
+  .formulario form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+  .formulario label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px; }
+  .formulario input[type="text"], .formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; }
+  .formulario input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px; }
 
 /**FOOTER**/
-.mb-4 {
-  display: flex;
-  align-content: center; }
-
 footer {
-  background-color: #E4C1F9; }
+  background-color: #fa3692;
+  color: #fff;
+  padding: 20px; }
 
-.redes img {
-  height: 20px; }
+.footer {
+  max-width: 100%; }
 
-.redes a {
-  text-decoration: none;
-  list-style: none; }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; }
 
-footer h2 {
-  font-family: 'Shantell Sans', cursive; }
+.col-md-6 {
+  width: 50%; }
 
-@media (max-width: 320px) {
+.logoFooter {
+  width: 40%;
+  text-shadow: #fff; }
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0; }
+
+.social-icons li {
+  list-style: none;
+  margin: 0 10px; }
+
+.social-icons li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #fff;
+  transition: all 0.3s ease; }
+
+.social-icons li a:hover {
+  background-color: #fff;
+  color: #222; }
+
+@media (max-width: 767px) {
+  main .carousel-inner {
+    width: 80%;
+    height: 150px;
+    margin: 0% 10% 0% 10%; }
   main div .btn-3d {
     background-color: #D0F4DE;
     border-radius: 50px;
     border-color: #FF99C8;
     font-family: 'Shantell Sans', cursive;
-    font-size: 20px;
-    width: 80%;
+    font-size: 16px;
+    width: 60%;
     padding: 10px;
-    margin: 2% 10% 2% 10%;
+    margin: 2% 20% 2% 20%;
     align-content: center; }
+  main .parrafoMain {
+    font-size: 12px;
+    font-weight: 500; }
   .btn-serv {
     background-color: #D0F4DE;
     border-radius: 50px;
@@ -196,9 +321,43 @@ footer h2 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
-    padding: 2%; } }
+    padding: 2%; }
+  .titulo {
+    font-size: 16px; }
+  .col-md-4 {
+    margin-top: 15%; }
+  .fun-card .card-title {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+    text-shadow: 2px 2px #888888; }
+  .fun-card .card-text {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #888888; }
+  .precio {
+    color: #D0F4DE;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #888888; }
+  .formulario {
+    max-width: 70%;
+    margin: 5% 15% 5% 10%;
+    display: block; }
+    .formulario .col-md-6 {
+      width: 100%;
+      margin: 5% 5% 5% 5%; }
+    .formulario .mapa {
+      width: 70vw; }
+    .formulario form {
+      background-color: #fff;
+      padding: 14px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); } }
 
-@media (min-width: 321px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   main div .btn-3d {
     background-color: #D0F4DE;
     border-radius: 50px;
@@ -213,4 +372,23 @@ footer h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-    padding: 2%; } }
+    padding: 2%; }
+  .titulo {
+    font-size: 24px; }
+  .col-md-4 {
+    width: 90%;
+    margin: 5% 5% 5% 5%; }
+  .formulario {
+    max-width: 70%;
+    margin: 5% 25% 5% 5%;
+    display: block; }
+    .formulario .col-md-6 {
+      width: 90%;
+      margin: 5% 5% 5% 5%; }
+    .formulario .mapa {
+      width: 70vw; }
+    .formulario form {
+      background-color: #fff;
+      padding: 16px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); } }

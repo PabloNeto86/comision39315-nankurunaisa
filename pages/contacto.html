@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="salon de fiesta, salon de fiestas infantiles, salon de fiestas infantiles aldo bonzi, aldo bonzi, cumpleaños, bautismo, pelotero, evento">
+    <meta name="description" content="¡Contáctanos en Nankurunaisa y deja que la diversión comience! Escríbenos o llámanos para reservar tu evento especial y disfruta de nuestros servicios personalizados.">
+    <meta name="author" content="Pablo Neto">
+    <meta name="copyright" content="Nankurunaisa">
+    <title>Contacto - Nankurunaisa</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/png" href="../assets/img/favicon.png"/>
-    <title>Nankurunaisa - Contacto</title>
+
 </head>
 <body>
     <header>
@@ -51,65 +57,48 @@
         </nav>
     </header>
     <main>
-        <h1>Envianos tu consulta</h1>
+        <h1 class="titulo">Envianos tu consulta</h1>
         <div class="formulario">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Juan Perez">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Telefono</label>
-                <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="11-5555-5555">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@ejemplo.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Agregue su consulta</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
+            <form class="form col-md-6">
+            <label for="nombre">Nombre y Apellido</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+    
+            <label for="movil">Número de Teléfono</label>
+            <input type="text" id="movil" name="movil" placeholder="Ingresa tu número de telefono fijo o móvil">
+    
+            <label for="email">Dirección de e-mail</label>
+            <input type="text" id="email" name="email" placeholder="Ingresa tu dirección de correo electrónico">
+    
+            <label for="consulta">Consulta</label>
+            <textarea id="consulta" name="consulta" placeholder="Ingresa aquí tu consulta"></textarea>
+    
             <button type="submit" class="btn-3d">Enviar</button>
-        </div>
-        <ul>
-            <li class="redesContacto">
-                <a href="www.facebook.com">
-                    <img src="../assets/img/facebook.png" alt="facebook">
-                </a>
-                <a href="www.instagram.com">
-                    <img src="../assets/img/instagram.png" alt="instagram">
-                </a>
-                <a href="www.telegram.com">
-                    <img src="../assets/img/telegram.png" alt="telegram">
-                </a>
-                <a href="www.youtube.com">
-                    <img src="../assets/img/youtube.png" alt="youtube">
-                </a>
-            </li>
-        </ul>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26236.81723934501!2d-58.50591609999999!3d-34.7152133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccee055a1de55%3A0x539a6315dac15260!2sAldo%20Bonzi%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1678327516574!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </form>
+            <div class="mapa col-md-2">
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26236.81723934501!2d-58.50591609999999!3d-34.7152133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccee055a1de55%3A0x539a6315dac15260!2sAldo%20Bonzi%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1678327516574!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </main>
     <footer>
-        <ul>
-            <li class="redes">
-                <a href="www.facebook.com">
-                    <img src="../assets/img/facebook.png" alt="facebook">
-                </a>
-                <a href="www.instagram.com">
-                    <img src="../assets/img/instagram.png" alt="instagram">
-                </a>
-                <a href="www.telegram.com">
-                    <img src="../assets/img/telegram.png" alt="telegram">
-                </a>
-                <a href="www.youtube.com">
-                    <img src="../assets/img/youtube.png" alt="youtube">
-                </a>
-            </li>
-        </ul>
-        <h2>Nankurunaisa 2023 - Todos los derechos reservados</h2>
-    </footer>
+        <div class="footer">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../assets/img/nankurunaisaLogo.png" alt="logoNankurunaisa" class="logoFooter">
+                </div>
+                <div class="col-md-4">
+                    <p>© 2023 - Todos los derechos reservados</p>
+                </div>
+                <div class="col-md-4">
+                <ul class="social-icons">
+                    <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="http://www.telegram.com" target="_blank"><i class="fa fa-telegram"></i></a></li>
+                    <li><a href="http://www.whatsapp.com" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </footer> 
     <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
